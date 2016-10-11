@@ -1,0 +1,40 @@
+%!TEX program = xelatex
+
+\documentclass[a4paper]{article}
+
+\usepackage{fontspec}
+   \defaultfontfeatures{Ligatures=TeX}
+   \setmainfont{Linux Libertine}
+   \setsansfont[Scale=MatchLowercase]{Fira Sans}
+   \setmonofont[Scale=MatchLowercase]{Fira Mono}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage[backend=biber,style=unified,maxnames=99]{biblatex}
+   \addbibresource{../bibliography/faroeserefs.bib}
+\usepackage{graphicx}
+\usepackage{expex}
+\usepackage{sectsty}
+   \sectionfont{\large}
+\usepackage{datetime2}
+% \usepackage[compact]{titlesec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks]{hyperref}
+   \hypersetup{allcolors=black,urlcolor=MidnightBlue}
+
+\title{Phonological variation in Faroese}
+\author{Alec Shaw}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\section{Conclusion}
+
+\nocite{*}
+
+\printbibliography
+
+\end{document}
