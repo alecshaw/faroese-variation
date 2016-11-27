@@ -1,1 +1,1 @@
-# faroese-variation
+# Phonological variation in Faroese
