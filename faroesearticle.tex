@@ -3,25 +3,25 @@
 \documentclass[a4paper]{article}
 
 \usepackage{fontspec}
-   \defaultfontfeatures{Ligatures=TeX}
-   \setmainfont{Linux Libertine}
-   \setsansfont[Scale=MatchLowercase]{Fira Sans}
-   \setmonofont[Scale=MatchLowercase]{Fira Mono}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Linux Libertine}
+  \setsansfont[Scale=MatchLowercase]{Fira Sans}
+  \setmonofont[Scale=MatchLowercase]{Fira Mono}
 \usepackage[margin=1in]{geometry}
 \usepackage{microtype}
 \usepackage[backend=biber,style=unified,maxnames=99]{biblatex}
-   \addbibresource{../bibliography/faroeserefs.bib}
+  \addbibresource{../bibliography/faroeserefs.bib}
 \usepackage{graphicx}
 \usepackage{expex}
 \usepackage{sectsty}
-   \sectionfont{\large}
+  \sectionfont{\large}
 \usepackage{datetime2}
 \usepackage{textglos}
 \usepackage{booktabs}
 \usepackage[hang,flushmargin]{footmisc}
 \usepackage[dvipsnames]{xcolor}
 \usepackage[colorlinks]{hyperref}
-   \hypersetup{allcolors=black,urlcolor=MidnightBlue}
+  \hypersetup{allcolors=black,urlcolor=MidnightBlue}
 
 \newcommand*{\ipa}{\textipa}
 
@@ -35,36 +35,40 @@
 
 \section{Introduction}
 
-\ex Monophthongs \parencite[68]{arnason:11a}\footnote{\textsc{fem} = feminine; \textsc{masc} = masculine; \textsc{neut} = neuter} \\[1ex]
-   \vtop{\halign{%
-      #\hfil & #\hfil & \quad #\hfil \cr
-      \xm{i} & \xv{linur} \xt{\ipa{li:nU\*r}} \gl{soft} & \xv{lint} \xt{\ipa{lI\r*nt}} \gl{soft-{\sc nom}} \cr
-      \xm{e} & \xv{frekur} \xt{\ipa{f\*re:(\super{h})kU\*r}}/\xt{\ipa{freE:(\super{h})kU\*r}} \gl{greedy} & \xv{frekt} \xt{\ipa{frE\super{h}kt}} \gl{greedy-{\sc nom}} \cr
-      \xm{y} & \xv{mytisk} \xt{\ipa{my:tIsk}} \gl{mythological} & \xv{mystisk} \xt{\ipa{mYstIsk}} \gl{mysterious} \cr
-      \xm{ø} & \xv{høgur} \xt{\ipa{hø:VU\*r}}/\xt{\ipa{hø{\oe}VU\*r}} \gl{high-{\sc masc}} & \xv{høgt} \xt{\ipa{h{\oe}kt}} \gl{high-{\sc neut}} \cr
-      \xm{u} & \xv{gulur} \xt{\ipa{ku:lU\*r}} \gl{yellow} & \xv{gult} \xt{\ipa{kU\r*lt}} \gl{yellow-{\sc neut}} \cr
-      \xm{o} & \xv{tola} \xt{\ipa{t\super{h}o:la}}/\xt{\ipa{t\super{h}oO:la}} \gl{to endure} & \xv{toldi} \xt{\ipa{t\super{h}Ol\r*dI}} \gl{endured} \cr
-      \xm{a} & \xv{Kanada} \xt{\ipa{k\super{h}a:nata}} \gl{Canada} & \xv{land} \xt{\ipa{lant}} \gl{land} \cr
-      \cr
-   }}
+Faroese phonology has not received a tremendous amount of attention in the linguistics literature. As a collection of islands which situate 
 
-   Diphthongs \\[1ex]
-   \vtop{\halign{%
-      #\hfil & #\hfil & \quad #\hfil \cr
-      \xm{\ipa{Ui}} & \xv{hvítur} \xt{\ipa{kfUi:tU\*r}} \gl{white-{\sc masc}} & \xv{hvítt} \xt{\ipa{kfUi\super{h}t:}} \gl{white-{\sc neut}} \cr
-      \xm{\ipa{Ei}} & \xv{deyður} \xt{\ipa{tei:jU\*r}} \gl{dead-{\sc masc}} & \xv{deytt} \xt{\ipa{tE\super{h}t:}} \gl{dead-{\sc neut}} \cr
-      \xm{ai} & \xv{feitur} \xt{\ipa{fai:tU\*r}}/\xt{\ipa{fOi:tU\*r}} \gl{fat-{\sc masc}} & \xv{feitt} \xt{\ipa{fai\super{h}t:}}/\xt{\ipa{fOi\super{h}t:}} \gl{fat-{\sc masc}} \cr
-      \xm{\ipa{Oi}} & \xv{gloyma} \xt{\ipa{klOi:ma}} \gl{to forget} & \xv{gloymdi} \xt{\ipa{klOimtI}} \gl{forgot} \cr
-      \xm{\ipa{Ea}} & \xv{spakur} \xt{\ipa{spEa:(\super{h})kU\*r}} \gl{calm-{\sc masc}} & \xv{spakt} \xt{\ipa{spakt}} \gl{calm-{\sc neut}} \cr
-      \xm{\ipa{Oa}} & \xv{vátur} \xt{\ipa{vOa:tU\*r}}/\xt{\ipa{vA:tU\*r}} \gl{wet-{\sc masc}} & \xv{vátt} \xt{\ipa{vO\super{h}t:}} \gl{wet-{\sc neut}} \cr
-      \xm{\ipa{0u}} & \xv{fúlur} \xt{\ipa{f0u:lU\*r}}/\xt{\ipa{fIu:lU\*r}} \gl{foul-{\sc masc}} & \xv{fúlt} \xt{\ipa{fY\r*lt}} \gl{foul-{\sc masc}} \cr
-      \xm{\ipa{Ou}} & \xv{tómur} \xt{\ipa{t\super{h}Ou:mU\*r}}/\xt{\ipa{t\super{h}{\oe}u:mU\*r}} \gl{empty-{\sc masc}} & \xv{tómt} \xt{\ipa{t\super{h}{\oe}\r*mt}}/\xt{\ipa{t\super{h}O\r*mt}} \gl{empty-{\sc neut}} \cr
-   }}
+\ex Monophthongs \parencite[68]{arnason:11a}\footnote{\textsc{fem} = feminine; \textsc{masc} = masculine; \textsc{neut} = neuter} \\[1ex]
+  \vtop{\halign{%
+    #\hfil & #\hfil & \quad #\hfil \cr
+    \xm{i} & \xv{linur} \xt{\ipa{li:nU\*r}} \gl{soft} & \xv{lint} \xt{\ipa{lI\r*nt}} \gl{soft-{\sc nom}} \cr
+    \xm{e} & \xv{frekur} \xt{\ipa{f\*re:(\super{h})kU\*r}}/\xt{\ipa{freE:(\super{h})kU\*r}} \gl{greedy} & \xv{frekt} \xt{\ipa{frE\super{h}kt}} \gl{greedy-{\sc nom}} \cr
+    \xm{y} & \xv{mytisk} \xt{\ipa{my:tIsk}} \gl{mythological} & \xv{mystisk} \xt{\ipa{mYstIsk}} \gl{mysterious} \cr
+    \xm{ø} & \xv{høgur} \xt{\ipa{hø:VU\*r}}/\xt{\ipa{hø{\oe}VU\*r}} \gl{high-{\sc masc}} & \xv{høgt} \xt{\ipa{h{\oe}kt}} \gl{high-{\sc neut}} \cr
+    \xm{u} & \xv{gulur} \xt{\ipa{ku:lU\*r}} \gl{yellow} & \xv{gult} \xt{\ipa{kU\r*lt}} \gl{yellow-{\sc neut}} \cr
+    \xm{o} & \xv{tola} \xt{\ipa{t\super{h}o:la}}/\xt{\ipa{t\super{h}oO:la}} \gl{to endure} & \xv{toldi} \xt{\ipa{t\super{h}Ol\r*dI}} \gl{endured} \cr
+    \xm{a} & \xv{Kanada} \xt{\ipa{k\super{h}a:nata}} \gl{Canada} & \xv{land} \xt{\ipa{lant}} \gl{land} \cr
+    \cr
+  }}
+
+  Diphthongs \\[1ex]
+  \vtop{\halign{%
+    #\hfil & #\hfil & \quad #\hfil \cr
+    \xm{\ipa{Ui}} & \xv{hvítur} \xt{\ipa{kfUi:tU\*r}} \gl{white-{\sc masc}} & \xv{hvítt} \xt{\ipa{kfUi\super{h}t:}} \gl{white-{\sc neut}} \cr
+    \xm{\ipa{Ei}} & \xv{deyður} \xt{\ipa{tei:jU\*r}} \gl{dead-{\sc masc}} & \xv{deytt} \xt{\ipa{tE\super{h}t:}} \gl{dead-{\sc neut}} \cr
+    \xm{ai} & \xv{feitur} \xt{\ipa{fai:tU\*r}}/\xt{\ipa{fOi:tU\*r}} \gl{fat-{\sc masc}} & \xv{feitt} \xt{\ipa{fai\super{h}t:}}/\xt{\ipa{fOi\super{h}t:}} \gl{fat-{\sc masc}} \cr
+    \xm{\ipa{Oi}} & \xv{gloyma} \xt{\ipa{klOi:ma}} \gl{to forget} & \xv{gloymdi} \xt{\ipa{klOimtI}} \gl{forgot} \cr
+    \xm{\ipa{Ea}} & \xv{spakur} \xt{\ipa{spEa:(\super{h})kU\*r}} \gl{calm-{\sc masc}} & \xv{spakt} \xt{\ipa{spakt}} \gl{calm-{\sc neut}} \cr
+    \xm{\ipa{Oa}} & \xv{vátur} \xt{\ipa{vOa:tU\*r}}/\xt{\ipa{vA:tU\*r}} \gl{wet-{\sc masc}} & \xv{vátt} \xt{\ipa{vO\super{h}t:}} \gl{wet-{\sc neut}} \cr
+    \xm{\ipa{0u}} & \xv{fúlur} \xt{\ipa{f0u:lU\*r}}/\xt{\ipa{fIu:lU\*r}} \gl{foul-{\sc masc}} & \xv{fúlt} \xt{\ipa{fY\r*lt}} \gl{foul-{\sc masc}} \cr
+    \xm{\ipa{Ou}} & \xv{tómur} \xt{\ipa{t\super{h}Ou:mU\*r}}/\xt{\ipa{t\super{h}{\oe}u:mU\*r}} \gl{empty-{\sc masc}} & \xv{tómt} \xt{\ipa{t\super{h}{\oe}\r*mt}}/\xt{\ipa{t\super{h}O\r*mt}} \gl{empty-{\sc neut}} \cr
+  }}
 \xe
 
-\section{Vowel reduction in restricted syllables}
+The island of Vágar is said to be the 
 
 \section{Raising in hiatus}
+
+\section{Proposal for a future study}
 
 \section{Conclusion}
 
